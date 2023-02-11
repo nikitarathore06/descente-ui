@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px 70px;
+}
+
+nav h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+nav ul {
+    width: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 13px;
+    font-weight: 600;
+    list-style: none;
+}
+
+nav button {
+    font-size: 15px;
+    padding: 0px 10px;
+    border: 1px solid black;
+    background: none;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+nav span {
+    display: flex;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+}
+
+.text {
+    padding: 72px;
+    width: 40%;
+}
+
+.text p {
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.text p img {
+    width: 25px;
+    height: 25px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 300;
+    border-bottom: 5px solid #000;
+}
+
+h2 {
+    font-size: 70px;
+    font-weight: 600;
+    border-bottom: 5px solid #000;
+}
+
+.image-section {
+    padding: 72px;
+    width: 60%;
+    height: 100%;
+}
+
+.image-section img {
+    width: 100%;
+}
+
+.right-sectio {
+    background-color: #F6F6F6;
+}
+
+.hero-section {
+    padding: 20px 70px;
+    display: flex;
+}
+
+.right-section {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.right-section p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.right-section span {
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.left-section {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-section h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.left-section span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.left-section i {
+    font-size: 30px;
+}
+
+.extra {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 0px 20px 20px 0;
+}
+
+.extra h6 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 11px;
+    font-weight: 1000;
+}
+
+.res {
+    display: block;
+}
+
+@media (max-width:768px) {
+    .res {
+        display: none;
+    }
+    .res_mobile {
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .text {
+        width: 100%;
+    }
+    .hero-section {
+        flex-direction: column;
+    }
+    .image-section {
+        padding: 15px;
+    }
+    .right-section {
+        width: 100%;
+    }
+    .left-section {
+        width: 100%;
+    }
+    .extra {
+        width: 100%;
+    }
+}
+
+@media (max-width:905px) {
+    nav {
+        padding: 20px 20px 10px 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .dark {
+        font-size: 30px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .extra h6 {
+        writing-mode: horizontal-tb;
+        font-size: 11px;
+        font-weight: 1000;
+    }
+}
